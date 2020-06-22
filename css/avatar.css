@@ -1,0 +1,11 @@
+.friend .main-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 30px;
+}
+
+.friend .g-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 23px;
+}
