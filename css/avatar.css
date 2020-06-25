@@ -9,3 +9,15 @@
   width: 60px;
   border-radius: 23px;
 }
+
+.chating .chat-avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 26px;
+}
+
+.chating .group-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 12px;
+}
