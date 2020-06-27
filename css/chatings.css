@@ -1,0 +1,13 @@
+.chatings .chating__number {
+  background-color: #dc5d46;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
