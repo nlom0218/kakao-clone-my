@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fun-header {
+  opacity: 0.6;
+}
+
+.header__title:nth-last-child(2) {
+  color: #020202;
+}
