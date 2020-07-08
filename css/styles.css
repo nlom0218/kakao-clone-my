@@ -5,8 +5,14 @@
 @import "recet.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  height: 2000px;
   background-color: #ffffff;
   padding: 20px;
   margin: 0px;
