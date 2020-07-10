@@ -1,0 +1,84 @@
+.friends .friend {
+  margin-bottom: 15px;
+}
+
+.friend,
+.friend-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__content {
+  margin-left: 15px;
+}
+
+.friend .friend__content h1 {
+  font-size: 22px;
+}
+
+.friend .friend__name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.friend__name i {
+  margin-left: 10px;
+  color: #f46055;
+}
+
+.friend .friend__status {
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.friend .gift {
+  border: 2px solid #f46055;
+  height: 30px;
+  width: 100px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.friend .gift i {
+  margin-left: 6px;
+  color: #f46055;
+}
+
+.gift .friend__gift {
+  opacity: 0.6;
+}
+
+.friends .friends__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  border-top: 1px solid #f8f8f8;
+  margin-bottom: 22px;
+}
+
+.friends__main .friends__title {
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.friends__main i {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.friend .friend__added {
+  margin-right: 5px;
+}
+
+.friend .friend__added,
+.friend .number__icon {
+  font-size: 15px;
+  opacity: 0.6;
+}
