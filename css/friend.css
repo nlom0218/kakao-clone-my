@@ -1,5 +1,6 @@
 .friends .friend {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .friend,

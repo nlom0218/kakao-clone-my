@@ -11,3 +11,54 @@
   align-items: center;
   border-radius: 50%;
 }
+
+.friend .friend__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatings .chatings__list {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.friend .friend__up-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.friend .friend__name,
+.friend .friend__persons {
+  margin-right: 7px;
+}
+.friend .friend__persons {
+  color: #c4c4c4;
+}
+
+.friend .friend__up-content i {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.friend .friend__bottom-text {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.friend .friend__time {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.friend .friend__right-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.friend__right-info .friend__time {
+  margin-bottom: 10px;
+}
