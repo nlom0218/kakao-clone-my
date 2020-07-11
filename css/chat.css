@@ -1,0 +1,35 @@
+.chat-body {
+  padding: 0px;
+}
+
+.chat-body .status-bar,
+.chat-body .header {
+  margin: 20px;
+}
+
+.chat-main {
+  background-image: url("../images/chatBg.png");
+  min-height: 100vh;
+}
+
+.chat-main__time {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-main .chat-main__timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9b9b9b;
+  height: 25px;
+  width: 180px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: white;
+  font-weight: 300;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
