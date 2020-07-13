@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Fun | My Kakao</title>
   </head>
-  <body>
+  <body class="fun-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">5:49</span>
@@ -48,27 +48,35 @@
         <li class="post__news">
           <h4>언제 디로딩을 해야할 것인가?</h4>
         </li>
-        <li class=post__news">
+        <li class="post__news">
           <h4>3대 측정시 조심해야 할 5가지</h4>
         </li>
       </ul>
       <ul class="fun__list photo">
         <li class="photo__news">
-          <img src="images/fun__nutrition.jpg" class="fun-avatar">
+          <img src="images/fun__nutrition.jpg" class="fun-avatar" />
           <h4>3대 영양소, 균형있게 섭취하자!</h4>
         </li>
         <li class="photo__news">
-          <img src="images/fun__ppagppagi.jpg" class="fun-avatar">
+          <img src="images/fun__ppagppagi.jpg" class="fun-avatar" />
           <h4>피지컬 갤러리 김계란 그를 파해쳐보자</h4>
         </li>
       </ul>
       <div class="fun__ad ad">
-        <img src="images/fun__ad.jpg" class="ad-avatar">
+        <img src="images/fun__ad.jpg" class="ad-avatar" />
+        <div class="ad__info">
+          <div class="ad__info__content">JUST DOIT 지금 당장 시작해라</div>
+          <div class="ad__info__downlord">다운로드</div>
+        </div>
       </div>
     </main>
     <div class="search-bar search">
       <div class="search__write--container">
-        <input type="text" placeholder="# 검색어를 입력해주세요" class="search__write-input" />
+        <input
+          type="text"
+          placeholder="검색어를 입력해주세요"
+          class="search__write-input"
+        />
         <div class="chat__icon-left chat__icon">
           <i class="fas fa-hashtag"></i>
         </div>
@@ -77,12 +85,16 @@
         </div>
       </div>
       <div class="search__recommend recommend">
-        <sapn class="recommend__item">#3대 운동</sapn>
-        <sapn class="recommend__item">#언더아머 조건</sapn>
-        <sapn class="recommend__item">#기회의 창이란?</sapn>
-        <sapn class="recommend__item">#김계란 100만 돌파</sapn>
-        <sapn class="recommend__item">#너와 나의 쇠질</sapn>
-        <sapn class="recommend__item">#헬창 파티</sapn>
+        <div class="recommend-column">
+          <sapn class="recommend__item item-frist">#3대 운동</sapn>
+          <sapn class="recommend__item">#언더아머 조건</sapn>
+          <sapn class="recommend__item">#기회의 창이란?</sapn>
+        </div>
+        <div class="recommend-column">
+          <sapn class="recommend__item">#김계란 200만 돌파</sapn>
+          <sapn class="recommend__item">#너와 나의 쇠질</sapn>
+          <sapn class="recommend__item">#헬창 파티</sapn>
+        </div>
       </div>
     </div>
     <nav class="nav">

@@ -8,13 +8,17 @@
 @import "nav-bar.css";
 @import "friend.css";
 @import "chat.css";
+@import "fun.css";
+@import "game-star.css";
+@import "more.css";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  height: 2000px;
+  width: 100%;
+  height: 1900px;
   background-color: #ffffff;
   padding: 20px;
   margin: 0px;

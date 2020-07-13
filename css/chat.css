@@ -1,22 +1,39 @@
+.header-wrapper {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  z-index: 5;
+}
+
+.header-wrapper .status-bar {
+  margin: 20px 20px 40px 20px;
+}
+
 .chat-body {
   padding: 0px;
 }
 
-.chat-body .status-bar,
 .chat-body .header {
   margin: 20px;
 }
 
 .chat-main {
-  background-image: url("../images/chatBg.png");
-  min-height: 100vh;
+  padding-top: 120px;
+  background-image: url("../images/white_leather.png");
+  min-height: 200vh;
+  z-index: 1;
 }
 
 .chat-main__time {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .chat-main .chat-main__timestamp {
@@ -30,6 +47,99 @@
   font-size: 13px;
   color: white;
   font-weight: 300;
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3),
-    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chat-write i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.chat-write .write-column-th i:nth-last-child(2) {
+  padding-right: 20px;
+}
+
+.write .write__input {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  outline: none;
+  font-size: 15px;
+}
+
+.write-column-t {
+  width: 70%;
+}
+
+.chat-write {
+  background-color: #f9f9f9;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 45px 20px;
+}
+
+.chat-main .chat-main__meassage {
+  margin: 20px;
+  position: relative;
+}
+
+.meassage .meassage__incoming {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.meassage__incoming-column,
+.meassage__sending-column {
+  display: flex;
+  align-items: flex-end;
+}
+
+.meassage .meassage__sending {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.meassage .meassage__author {
+  opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.meassage__incoming .meassage__content {
+  color: white;
+  background-image: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+  padding: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  margin-right: 10px;
+}
+
+.meassage__incoming .meassage__time {
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.meassage__sending .meassage__content {
+  color: white;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  padding: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  margin-left: 10px;
+}
+
+.meassage__sending .meassage__time {
+  opacity: 0.6;
+  font-size: 16px;
 }

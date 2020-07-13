@@ -1,0 +1,145 @@
+.fun-body {
+  padding: 0px;
+  height: 1000px;
+  background-color: #ffffff;
+  margin: 0px;
+  color: #020202;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.fun-body .status-bar {
+  padding: 20px 20px 0px 20px;
+}
+
+.post .post__news {
+  padding: 10px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 17px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.fun-main .photo {
+  padding-top: 20px;
+  padding-bottom: 45px;
+  border-top: 11px solid #f0f0f0;
+  border-bottom: 11px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo .photo__news {
+  width: 210px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.photo__news h4 {
+  margin-top: 10px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.photo .photo__news:nth-child(1) {
+  margin-right: 15px;
+}
+
+.search-bar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 80px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.search .search__write--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.search .search__write--container i {
+  position: absolute;
+  cursor: pointer;
+}
+
+.search-bar .fa-hashtag {
+  left: 85px;
+  top: 22px;
+  font-size: 18px;
+  color: #f2e449;
+}
+
+.search-bar .fa-search {
+  right: 50px;
+  top: 22px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.search .search__write-input {
+  font-size: 16px;
+  width: 90%;
+  margin: 10px 0px;
+  padding: 10px 80px;
+  border-radius: 10px;
+  border: 3px solid #f2e449;
+  outline: none;
+}
+
+.search__recommend {
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.search__recommend .recommend-column {
+  margin-bottom: 25px;
+}
+
+.recommend-column .recommend__item {
+  cursor: pointer;
+  background-color: #d1d1d1;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.recommend-column .item-frist {
+  background-color: #377d48;
+  opacity: 1;
+  color: white;
+}
+
+.fun__ad {
+  position: relative;
+  cursor: pointer;
+}
+
+.fun__ad .ad__info__content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.fun__ad .ad__info__downlord {
+  position: absolute;
+  top: 14px;
+  right: 25px;
+  color: white;
+  font-weight: 300;
+  padding: 5px;
+  border: 1px solid white;
+}

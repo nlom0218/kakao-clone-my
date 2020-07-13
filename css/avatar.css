@@ -1,19 +1,19 @@
 .main-avatar {
   height: 80px;
   width: 80px;
-  border-radius: 30px;
+  border-radius: 35px;
 }
 
 .friend .g-avatar {
   height: 60px;
   width: 60px;
-  border-radius: 23px;
+  border-radius: 26px;
 }
 
 .friend .chat-avatar {
   height: 70px;
   width: 70px;
-  border-radius: 26px;
+  border-radius: 30px;
 }
 
 .friend .group-avatar {
@@ -23,11 +23,37 @@
 }
 
 .fun .fun-avatar {
-  width: 180px;
+  width: 200px;
   height: 130px;
+  border-radius: 10px;
 }
 
 .game .game-avatar {
   width: 180px;
   height: 100px;
+}
+
+.chat-main .meassage__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fun-main .ad-avatar {
+  width: 100%;
+  height: 250px;
+}
+
+.game-main .ad-avatar {
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+}
+
+.now .more__avatar {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  cursor: pointer;
 }
