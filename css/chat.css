@@ -1,3 +1,8 @@
+.chat-body {
+  width: 100%;
+  padding: 0px;
+}
+
 .header-wrapper {
   background-color: white;
   position: fixed;
@@ -10,10 +15,6 @@
 
 .header-wrapper .status-bar {
   margin: 20px 20px 40px 20px;
-}
-
-.chat-body {
-  padding: 0px;
 }
 
 .chat-body .header {
@@ -60,30 +61,71 @@
   padding-right: 20px;
 }
 
-.write .write__input {
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(224, 224, 224);
+.chat-write .write-column-o,
+.chat-write .write-column-th {
+  position: absolute;
+}
+.chat-write .write-column-o {
+  left: 50px;
+  top: 28px;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+
+.chat-write .write-column-th {
+  right: 50px;
+  top: 28px;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+
+.write .chat-write__input {
+  width: 90%;
   border-radius: 20px;
+  padding: 15px 70px;
+  background-color: white;
   border: 1px solid rgb(224, 224, 224);
   outline: none;
   font-size: 15px;
-}
-
-.write-column-t {
-  width: 70%;
+  transition: all 1s ease-in-out;
 }
 
 .chat-write {
-  background-color: #f9f9f9;
   position: fixed;
+
   width: 100%;
   bottom: 0px;
   left: 0px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px 45px 20px;
+  justify-content: center;
+  padding: 15px 0px 50px 0px;
+}
+
+.chat-write__input:focus ~ .write-column-o,
+.chat-write__input:focus ~ .write-column-th {
+  opacity: 0;
+}
+
+.chat-write__input:focus {
+  width: 80%;
+
+  animation: float 2s ease-in-out infinite forwards;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0 13px 27px -50px rgba(50, 50, 93, 0.25),
+      0 8px 16px -60px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
 }
 
 .chat-main .chat-main__meassage {
@@ -119,7 +161,7 @@
 .meassage__incoming .meassage__content {
   color: white;
   background-image: linear-gradient(to right, #bbd2c5, #536976, #292e49);
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 20px;
   border-top-left-radius: 0px;
   margin-right: 10px;
@@ -133,7 +175,7 @@
 .meassage__sending .meassage__content {
   color: white;
   background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 20px;
   border-top-left-radius: 0px;
   margin-left: 10px;
