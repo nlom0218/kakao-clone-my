@@ -11,6 +11,7 @@
 @import "fun.css";
 @import "game-star.css";
 @import "more.css";
+@import "setting.css";
 
 * {
   box-sizing: border-box;
@@ -30,4 +31,22 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main {
+  animation: startKakao 0.3s linear forwards;
+}
+.search-bar {
+  animation: startKakao 0.3s linear forwards;
+}
+
+@keyframes startKakao {
+  from {
+    transform: translateY(30px);
+    opacity: 0.5;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }

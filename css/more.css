@@ -86,8 +86,28 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: pointer;
+  transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    animation 0.5s ease-in-out;
+}
+
+.menu-column .menu__list:hover {
+  color: rgb(255, 0, 98);
+  opacity: 1;
+  animation: upAndDown 1s infinite ease-in-out forwards;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
 }
 
 .menu-column .menu__list i {
