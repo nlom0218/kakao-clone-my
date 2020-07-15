@@ -35,3 +35,18 @@
   right: -10px;
   border-radius: 10px;
 }
+
+.nav {
+  transform: translateY(80px);
+  animation: startNav 0.3s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes startNav {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}

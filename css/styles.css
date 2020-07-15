@@ -12,6 +12,7 @@
 @import "game-star.css";
 @import "more.css";
 @import "setting.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
@@ -34,19 +35,17 @@ a {
 }
 
 main {
-  animation: startKakao 0.3s linear forwards;
+  animation: startKakao 0.3s ease-out forwards;
 }
 .search-bar {
-  animation: startKakao 0.3s linear forwards;
+  animation: startKakao 0.3s ease-out forwards;
 }
 
 @keyframes startKakao {
   from {
     transform: translateY(30px);
-    opacity: 0.5;
   }
   to {
     transform: none;
-    opacity: 1;
   }
 }
