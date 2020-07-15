@@ -87,6 +87,7 @@
   align-items: center;
   margin-bottom: 40px;
   opacity: 0.6;
+
   cursor: pointer;
   transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out,
     animation 0.5s ease-in-out;
