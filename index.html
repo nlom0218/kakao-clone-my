@@ -6,7 +6,6 @@
       name="google-signin-client_id"
       content="326532632102-ct3ociu4ml14pi7n1kjrf20h4sn5burp.apps.googleusercontent.com"
     />
-
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -16,6 +15,15 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Index | My Kakao</title>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="">
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+    </script>
   </head>
   <body>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
