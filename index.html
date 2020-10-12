@@ -14,7 +14,6 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Index | My Kakao</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="">
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
@@ -315,5 +314,10 @@
       <span class="bigScreen__text">☆화면의 폭을 줄이세요!☆</span>
     </div>
     <script src="clock.js"></script>
+    <script
+      src="https://apis.google.com/js/platform.js?onload=init"
+      async
+      defer
+    ></script>
   </body>
 </html>
